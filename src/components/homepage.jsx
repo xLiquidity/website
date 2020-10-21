@@ -4,6 +4,7 @@ import HomeSection from './homesection'
 import AboutSection from './aboutsection'
 import ContactSection from './contactsection'
 import Footer from './footer'
+import EthData from './ethData'
 
 function HomePage() {
 return (
@@ -12,6 +13,7 @@ return (
 <HomeSection />
 <AboutSection />
 <ContactSection />
+<EthData />
 <Footer />
 </div>
 );

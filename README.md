@@ -1,3 +1,9 @@
+## RUNNING LOCAL CHAIN
+
+install `ganache-cli`
+once installed in terminal run `ganache-cli`
+- this should create a localRPC test blockchain on localhost:8545 (if port is different change in frontend code)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
