@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/liquiditytestsite/static/css/main.5f361e03.chunk.css",
-    "main.js": "/liquiditytestsite/static/js/main.a164aa8a.chunk.js",
-    "main.js.map": "/liquiditytestsite/static/js/main.a164aa8a.chunk.js.map",
+    "main.css": "/liquiditytestsite/static/css/main.ba0cbe2e.chunk.css",
+    "main.js": "/liquiditytestsite/static/js/main.c8e4ee4d.chunk.js",
+    "main.js.map": "/liquiditytestsite/static/js/main.c8e4ee4d.chunk.js.map",
     "runtime-main.js": "/liquiditytestsite/static/js/runtime-main.46fbc810.js",
     "runtime-main.js.map": "/liquiditytestsite/static/js/runtime-main.46fbc810.js.map",
-    "static/js/2.88ee9040.chunk.js": "/liquiditytestsite/static/js/2.88ee9040.chunk.js",
-    "static/js/2.88ee9040.chunk.js.map": "/liquiditytestsite/static/js/2.88ee9040.chunk.js.map",
+    "static/js/2.53c57517.chunk.js": "/liquiditytestsite/static/js/2.53c57517.chunk.js",
+    "static/js/2.53c57517.chunk.js.map": "/liquiditytestsite/static/js/2.53c57517.chunk.js.map",
     "index.html": "/liquiditytestsite/index.html",
-    "precache-manifest.957c4d67cc299af7bb35d86ed0d36724.js": "/liquiditytestsite/precache-manifest.957c4d67cc299af7bb35d86ed0d36724.js",
+    "precache-manifest.32fa3481bbee5e696300f0b45834f9ef.js": "/liquiditytestsite/precache-manifest.32fa3481bbee5e696300f0b45834f9ef.js",
     "service-worker.js": "/liquiditytestsite/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/liquiditytestsite/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.88ee9040.chunk.js.LICENSE.txt": "/liquiditytestsite/static/js/2.88ee9040.chunk.js.LICENSE.txt",
+    "static/css/main.ba0cbe2e.chunk.css.map": "/liquiditytestsite/static/css/main.ba0cbe2e.chunk.css.map",
+    "static/js/2.53c57517.chunk.js.LICENSE.txt": "/liquiditytestsite/static/js/2.53c57517.chunk.js.LICENSE.txt",
     "static/media/contact.svg": "/liquiditytestsite/static/media/contact.44cff449.svg",
-    "static/media/logo.svg": "/liquiditytestsite/static/media/logo.5d5d9eef.svg",
-    "static/media/logo.png": "/liquiditytestsite/static/media/logo.fdc7d581.png",
-    "static/media/ocean.png": "/liquiditytestsite/static/media/ocean.403b48f2.png"
+    "static/media/flash.svg": "/liquiditytestsite/static/media/flash.e70fdc8f.svg",
+    "static/media/home.svg": "/liquiditytestsite/static/media/home.8e4f56f1.svg",
+    "static/media/logo.png": "/liquiditytestsite/static/media/logo.4875c2d0.png",
+    "static/media/swap.svg": "/liquiditytestsite/static/media/swap.1569b52e.svg",
+    "static/media/tractor.svg": "/liquiditytestsite/static/media/tractor.b83f3cf3.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.46fbc810.js",
-    "static/js/2.88ee9040.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.a164aa8a.chunk.js"
+    "static/js/2.53c57517.chunk.js",
+    "static/css/main.ba0cbe2e.chunk.css",
+    "static/js/main.c8e4ee4d.chunk.js"
   ]
 }
