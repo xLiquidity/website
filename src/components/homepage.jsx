@@ -7,11 +7,11 @@ import Footer from './footer'
 
 function HomePage() {
 return (
-    <div>
+    <div style={{backgroundColor: '#bedae9', fontFamily:'montserrat'}}>
 <NavBar />
 <HomeSection />
-<AboutSection id="about"/>
-<ContactSection id="about"/>
+<AboutSection />
+<ContactSection />
 <Footer />
 </div>
 );
