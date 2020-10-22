@@ -25,8 +25,6 @@ const EthData = () => {
     setAccts(as)
   }
   getAccts()
-  // web3.eth.getAccounts().then(a => accts = a);
-  // console.log(accts)
   return (
     accts.map(a => {
       return <div>{a}</div>
