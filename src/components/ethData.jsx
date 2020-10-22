@@ -1,34 +1,55 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Connectors } from 'web3-react'
 import Web3 from 'web3';
-const { InjectedConnector, NetworkOnlyConnector } = Connectors
-
-const MetaMask = new InjectedConnector({ supportedNetworks: [1, 4] })
-
-const Infura = new NetworkOnlyConnector({
-  providerURL: 'http://127.0.0.1:8545'
-})
-
-const connectors = { MetaMask, Infura }
-
+import { useWallet, UseWalletProvider } from 'use-wallet'
 
 
 const EthData = () => {
 
+  const wallet = useWallet()
+
+  //this connects to the ganache localRPC running
+  //  gives you access to those 10 generated accounts
+  // let web3 = new Web3('ws://localhost:8545');
+
+
+  //WONT WORK IF YOU DONT HAVE WEB3
+  let web3 = new Web3(window.ethereum)
+
   const [accts, setAccts] = useState([]);
 
-  let web3 = new Web3('ws://localhost:8545');
-  console.log(connectors)
+  useEffect(() => {
+    (async () => {
+      const as = await web3.eth.getAccounts();
+      setAccts(as)
+    })();
+  }, []);
 
-  const getAccts = async () => {
-    const as = await web3.eth.getAccounts();
-    setAccts(as)
-  }
-  getAccts()
+
+
+
   return (
-    accts.map(a => {
-      return <div>{a}</div>
-    })
+    <>
+      <h1>Wallet</h1>
+      {wallet.status === 'connected' ? (
+        <div>
+          <div>Account: {wallet.account}</div>
+          <div>Balance: {wallet.balance}</div>
+          <button onClick={() => wallet.reset()}>disconnect</button>
+        </div>
+      ) : (
+        <div>
+          Connect:
+          <button onClick={() => wallet.connect()}>MetaMask</button>
+          <button onClick={() => wallet.connect('frame')}>Frame</button>
+          <button onClick={() => wallet.connect('portis')}>Portis</button>
+        </div>
+      )}
+
+      {accts.map(a => {
+        return <div>{a}</div>
+      })}
+    </>
   );
 
 }
