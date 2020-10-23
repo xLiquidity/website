@@ -3,6 +3,7 @@ import { Grid, makeStyles } from '@material-ui/core';
 import Tractor from '../images/tractor.svg';
 import Flash from '../images/flash.svg';
 import Swap from '../images/swap.svg';
+import Design from '../images/design.png'
 
 import SimpleCard from './card';
 
@@ -14,6 +15,11 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(10, 10, 20),
       color: '#131C46',
     },
+    image: {
+      borderRadius: 25,
+      width: '50%',
+      marginTop: 100,
+    },
   }));
 
 function AboutSection() {
@@ -24,11 +30,11 @@ function AboutSection() {
         <div className={classes.root}>
         <h1>Benefits of xLiquidity</h1>
       <Grid container spacing={10}>
-        <Grid item xs>
+      <Grid item xs>
 <SimpleCard
-  aboutImage={Tractor}
-  aboutTitle={'Yield Farming'}
-  aboutContent={'Deposit digital currency in vaults to gain yield'}
+  aboutImage={Swap}
+  aboutTitle={'Efficient Markets'}
+  aboutContent={'Ensure assets are "priced right" across exchanges'}
 />
 </Grid>
 <Grid item xs>
@@ -40,12 +46,13 @@ function AboutSection() {
 </Grid>
 <Grid item xs>
 <SimpleCard
-  aboutImage={Swap}
-  aboutTitle={'Efficient Markets'}
-  aboutContent={'Ensure assets are "priced right" across exchanges'}
+  aboutImage={Tractor}
+  aboutTitle={'Yield Farming'}
+  aboutContent={'Deposit digital currency in vaults to gain yield'}
 />
 </Grid>
       </Grid>
+      <img src={Design} className={classes.image}/>
       </div>
 
     )
