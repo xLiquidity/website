@@ -1,7 +1,6 @@
 import React from 'react';
 import { Grid, makeStyles, IconButton, SvgIcon } from '@material-ui/core';
 import TwitterIcon from '../images/contactIcons/twittericon';
-import TelegramIcon from '../images/contactIcons/telegramicon';
 import DiscordIcon from '../images/contactIcons/discordicon';
 import GitHubIcon from '../images/contactIcons/githubicon';
 
