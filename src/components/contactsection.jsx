@@ -1,7 +1,10 @@
 import React from 'react';
-import { Grid, makeStyles } from '@material-ui/core';
-import contact from '../images/contact.svg'
-import EmailForm from './emailform'
+import { Grid, makeStyles, IconButton, SvgIcon } from '@material-ui/core';
+import TwitterIcon from '../images/contactIcons/twittericon';
+import TelegramIcon from '../images/contactIcons/telegramicon';
+import DiscordIcon from '../images/contactIcons/discordicon';
+import GitHubIcon from '../images/contactIcons/githubicon';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -16,16 +19,26 @@ function ContactSection() {
     const classes = useStyles();
     return (
     <div className={classes.root}>
-    <h1>Get notified on xLiquidity</h1>
-      <Grid container spacing={10}>
-        <Grid item md>
-        <img src={contact} width="75%" />
-        </Grid>
-        <Grid style={{margin: "auto"}} item md>
-<h2>Sign up for updates</h2>
-<EmailForm/>
-</Grid>
-      </Grid>
+    <h1 style={{marginBottom: 50}}>Stay updated on xLiquidity</h1>
+<Grid container spacing={5}> 
+<Grid item xs style={{margin: "auto"}}>
+  <IconButton aria-label="twitter" href="https://twitter.com/XLiquidity">
+    <TwitterIcon/>
+  </IconButton>
+  </Grid>
+  <Grid item xs style={{margin: "auto"}}>
+  <IconButton aria-label="discord" href="https://discord.gg/htMDawHhF5">
+    <DiscordIcon/>
+  </IconButton>
+  </Grid>
+  <Grid item xs style={{margin: "auto"}}>
+  <IconButton aria-label="github" href="https://github.com/xliquidity">
+    <GitHubIcon/>
+  </IconButton>
+  </Grid>
+  </Grid>
+{/* </Grid>
+       </Grid> */}
       </div>
 
 

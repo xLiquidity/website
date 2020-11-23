@@ -3,8 +3,6 @@ import { Grid, makeStyles } from '@material-ui/core';
 import Tractor from '../images/tractor.svg';
 import Flash from '../images/flash.svg';
 import Swap from '../images/swap.svg';
-import Design from '../images/design.png'
-
 import SimpleCard from './card';
 
 
@@ -15,11 +13,7 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(10, 10, 20),
       color: '#131C46',
     },
-    image: {
-      borderRadius: 25,
-      width: '50%',
-      marginTop: 100,
-    },
+
   }));
 
 function AboutSection() {
@@ -28,7 +22,7 @@ function AboutSection() {
     return (
 
         <div className={classes.root}>
-        <h1>Benefits of xLiquidity</h1>
+        <h1 style={{marginBottom: 50}}>Benefits of xLiquidity</h1>
       <Grid container spacing={10}>
       <Grid item xs>
 <SimpleCard
@@ -52,7 +46,7 @@ function AboutSection() {
 />
 </Grid>
       </Grid>
-      <img src={Design} className={classes.image}/>
+      
       </div>
 
     )

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, makeStyles } from '@material-ui/core';
-import logo from '../images/logo.png'
+import logo from '../images/mainlogo.png'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -24,7 +24,7 @@ function Footer() {
       <Grid container spacing={10}>
         <Grid item md>
 <h1>Expand the frontiers of defi</h1>
-<p>xLiquidity is a protocol that allows you to passively put your crypto to use</p>
+<h4>xLiquidity is a protocol that allows you to passively put your crypto to use</h4>
 </Grid>
 <Grid item md>
         <img src={logo} width="30%" />

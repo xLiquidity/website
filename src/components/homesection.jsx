@@ -26,8 +26,8 @@ function HomeSection() {
       <Grid container spacing={10}>
         <Grid style={{margin: "auto"}} item md>
 <h1>Ensuring optimal liquidity across crypto</h1>
-<p>xLiquidity enables investors of any size to participate in the cryptocurrency market, regardless of exchange or protocol though efficient market making</p>        
-<Button className={classes.button} href="https://github.com/Islandersfan2016/Liquidity-Protocol" variant="contained">
+<h4>xLiquidity enables investors of any size to participate in the cryptocurrency market, regardless of exchange or protocol though efficient market making</h4>        
+<Button className={classes.button} href="https://github.com/xliquidity" variant="contained">
   View Code
 </Button>
 </Grid>

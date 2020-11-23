@@ -2,7 +2,7 @@
   "name": "xliquidity",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://abolduser.github.io/liquiditytestsite",
+  "homepage": "https://xliquidity.finance",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@testing-library/jest-dom": "^4.2.4",

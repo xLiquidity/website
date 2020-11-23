@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { AppBar, Tabs, Tab } from "@material-ui/core";
-import Logo from './logo';
+import Logo from '../images/logo';
 
 function NavBar() {
  
@@ -9,7 +9,7 @@ function NavBar() {
 <AppBar>
 <StyledTopBarInner><StyledLogoWrapper><Logo/></StyledLogoWrapper><h2>xLiquidity</h2>
         <Tabs>
-          <Tab label='Github' href='https://github.com/Islandersfan2016/Liquidity-Protocol' />
+          <Tab label='Github' href='https://github.com/xliquidity' />
           </Tabs>
         </StyledTopBarInner>
       </AppBar>
